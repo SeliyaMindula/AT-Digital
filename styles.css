@@ -1,0 +1,246 @@
+:root {
+  --primary-color: #6b3cc9;
+  --secondary-color: #f28d35;
+
+  --analogous-color1: #6a44f2;
+  --analogous-color2: #1cbddd;
+
+  --triadic-color1: #52378c;
+
+  --dark-color: #78BF91;
+
+  --text-color: #2f2f2f;
+  --text-color-light: #545a75;
+  --text-color-subtle: #9c9991;
+
+  --accent-color1: #e2f2fe;
+  --accent-color2: #fff8e0;
+
+  --error-color: #ff0335;
+  --success-color: #5eb30b;
+
+  --white-color: #ffffff;
+
+
+  --max-width: 1200px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--white-color)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-col {
+  background-color: var(--primary-color);
+  padding: 1% 10% 1% 10%;
+}
+
+nav {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-title {
+  color: var(--text-color)
+}
+
+.nav-text:hover {
+  color: var(--secondary-color)
+}
+
+.nav-links {
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-links:hover {
+  color: var(--accent-color1);
+}
+
+
+
+.hero-image {
+  background: url('assets/heroimg.png') no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80%;
+  display: flex;
+}
+
+.hero-text {
+  color: #ffffff;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-weight: 700;
+
+}
+
+.hero-text .lead {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Hero-card {
+  background: linear-gradient(90deg, #1cdd9d 10%, var(--analogous-color2));
+  padding: 20px;
+  position: relative;
+  top: 70px;
+  left: 40px;
+  width: 50%;
+  height: auto;
+}
+
+.flex-container .row {
+  display: flex;
+  align-items: center;
+}
+
+.card-title{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.card-text{
+  font-weight: 400;
+  color: black;
+  margin-top: 10px;
+}
+
+.fa-q{
+  color: var(--primary-color);
+}
+
+
+.card-header .btn-link {
+  text-decoration: none;
+  color: #333;
+  width: 100%;
+  text-align: left;
+}
+
+.card-header {
+  background-color: #f7f7f7;
+  border: none;
+}
+
+.active-btn{
+color: var(--primary-color);
+}
+.card {
+  border: none;
+  padding: 6px;
+}
+
+.card-body {
+  color: #555;
+}
+
+.card-header .collapsed {
+  color: #333;
+}
+
+.card-header .btn-link::after {
+  content: '\002B';
+  float: right;
+}
+
+.card-header .btn-link[aria-expanded="true"]::after {
+  content: '\2212';
+}
+
+
+
+
+
+footer {
+  background-color: var(--primary-color)
+}
+
+footer h5 {
+  color: #ffffff;
+}
+
+footer p,
+footer ul,
+footer li,
+footer span {
+  color: #dcdcdc;
+}
+
+.footer-bottom {
+  font-size: 0.9em;
+  padding: 0.5em 0;
+}
+
+hr {
+  border-color: #7d7d7d;
+}
+
+
+@media (width < 992px) {
+  .nav-links {
+    color: var(--text-color);
+    font-weight: 550;
+  }
+}
+
+
+@media (width < 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Hero-card {
+    background: linear-gradient(90deg, #1cdd9d 10%, var(--analogous-color2));
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%; 
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  /* .row > [class^="col-"] {
+    flex: 0 0 auto;
+    width: 50%; 
+  } */
+
+  .card-img-top {
+    max-width: 350px; 
+    display: block; 
+    margin: 0 auto;
+  }
+}
+  
